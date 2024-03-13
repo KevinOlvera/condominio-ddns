@@ -1,14 +1,14 @@
 # DonDominio DDNS Docker Container
 
-This Docker container automates the process of updating your domain's IP address on dondominio.com using a DDNS (Dynamic Domain Name System) update script. It is designed to be lightweight, efficient, and easy to use, ensuring that your domain always points to the correct IP address.
+This Docker image automates the process of updating your domain's IP address on dondominio.com using a DDNS (Dynamic Domain Name System) update script. It is designed to be lightweight, efficient, and easy to use, ensuring that your domain always points to the correct IP address.
 
 ## Prerequisites
 
-Before using this container, you need to have a domain already set up on dondominio.com with a default IP address. The container will update this IP address to the current public IP of the host machine when it runs.
+Before using this image, you need to have a domain already set up on dondominio.com with a default IP address. The container will update this IP address to the current public IP of the host machine when it runs.
 
-## Building the Container
+## Building the Image
 
-To build the Docker container, navigate to the directory containing the Dockerfile and run the following command:
+To build the Docker image, navigate to the directory containing the Dockerfile and run the following command:
 
 ```bash
 docker build . -t docker pull kolvera/dondominio-ddns:latest
