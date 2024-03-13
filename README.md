@@ -1,4 +1,4 @@
-# DonDominio DDNS Docker Container
+# DonDominio DDNS Docker Image
 
 This Docker image automates the process of updating your domain's IP address on dondominio.com using a DDNS (Dynamic Domain Name System) update script. It is designed to be lightweight, efficient, and easy to use, ensuring that your domain always points to the correct IP address.
 
