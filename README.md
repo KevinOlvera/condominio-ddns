@@ -11,10 +11,10 @@ Before using this container, you need to have a domain already set up on dondomi
 To build the Docker container, navigate to the directory containing the Dockerfile and run the following command:
 
 ```bash
-docker build . -t dondominio-ddns:latest
+docker build . -t docker pull kolvera/dondominio-ddns:latest
 ```
 
-This command builds the Docker image with the tag `dondominio-ddns:latest`.
+This command builds the Docker image with the tag `docker pull kolvera/dondominio-ddns:latest`.
 
 ## Running the Container
 
@@ -26,7 +26,7 @@ docker run -d --name dondominio-ddns-container \
 -e DDNS_API_KEY='your_token_here' \
 -e DDNS_DOMAIN='your_domain.com' \
 -e UTIME='5m' \
-dondominio-ddns:latest
+docker pull kolvera/dondominio-ddns:latest
 ```
 
 This will start the container and begin the process of periodically checking and updating the IP address associated with your domain.
@@ -64,7 +64,7 @@ docker run -d --name dondominio-ddns-container \
 -e DDNS_API_KEY='yourApiKey' \
 -e DDNS_DOMAIN='yourDomain.com' \
 -e UTIME='1h' \
-dondominio-ddns:latest
+docker pull kolvera/dondominio-ddns:latest
 ```
 
 This example sets the DDNS update to occur every 1 hour. Adjust the `DDNS_USERNAME`, `DDNS_API_KEY`, `DDNS_DOMAIN`, and `UTIME` values according to your needs.
